@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030" >
+
+    <TextView
+        android:id="@+id/materia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Materia"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/un1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/contra"
+        android:layout_below="@+id/contra"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		    <TextView
+        android:id="@+id/un5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/un6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/un4"
+        android:layout_alignBottom="@+id/un4"
+        android:layout_alignRight="@+id/textView6"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/un7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_below="@+id/textView5"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/un8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_below="@+id/textView6"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/un9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_below="@+id/textView7"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Un5"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/pins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/un5"
+        android:layout_toLeftOf="@+id/textView5"
+        android:text="Un4"
+		android:layout_marginRight="9dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/un4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/un5"
+        android:layout_alignBottom="@+id/un5"
+        android:layout_alignRight="@+id/pins"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/mat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/un3"
+        android:layout_toLeftOf="@+id/pins"
+        android:text="Un3"
+        android:layout_marginRight="9dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/un3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/un4"
+        android:layout_alignBottom="@+id/un4"
+        android:layout_alignRight="@+id/mat"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/aula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mat"
+        android:layout_alignBottom="@+id/mat"
+        android:layout_toLeftOf="@+id/mat"
+        android:text="Un2"
+        android:layout_marginRight="9dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/un2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/un3"
+        android:layout_alignBottom="@+id/un3"
+        android:layout_alignRight="@+id/aula"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/contra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/un2"
+        android:layout_toLeftOf="@+id/aula"
+        android:text="Un1"
+		android:layout_marginRight="9dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/un5"
+        android:layout_toRightOf="@+id/un5"
+        android:text="Un6"
+        android:layout_marginLeft="9dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/un6"
+        android:layout_toRightOf="@+id/un6"
+        android:text="Un7"
+                android:layout_marginLeft="9dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/un7"
+        android:layout_toRightOf="@+id/un7"
+        android:text="Un8"
+                android:layout_marginLeft="9dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/un8"
+        android:layout_toRightOf="@+id/un8"
+        android:text="Un9"
+                android:layout_marginLeft="9dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#eeeeee" />
+
+</RelativeLayout>

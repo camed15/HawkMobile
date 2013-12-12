@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    android:orientation="vertical"
+    tools:context=".SemButtons"
+     android:id="@+id/sembtns">
+     
+     <LinearLayout
+       android:id="@+id/barra"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+             android:background="#669900" 
+            android:orientation="horizontal" 
+            android:shadowColor="@android:color/darker_gray"
+            >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@android:color/black"
+            android:src="@drawable/logoselect"
+            android:onClick="cierra" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingLeft="20dp"
+        android:textColor="#ffffff"
+        android:text="Kardex"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+         
+
+       </LinearLayout>
+
+
+</LinearLayout>

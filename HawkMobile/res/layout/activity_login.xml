@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/lgn"
+    tools:context=".Login"
+    android:background="#303030" >
+    
+<RelativeLayout 
+    android:id="@+id/logoin"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/loginlogo"
+    >
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/conecta"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/aut"
+        android:background="@drawable/dia_select" />
+
+    <EditText
+        android:id="@+id/nocontroltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/niptext"
+        android:layout_alignRight="@+id/niptext"
+        android:layout_centerVertical="true"
+        android:textColor="#ececec"
+        android:background="@drawable/edit_text_holo_light"
+       
+        android:focusable="true"
+        android:hint="@string/nocontrol"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#FFFFFF"
+       >
+
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/niptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nocontroltext"
+        android:layout_marginTop="29dp"
+        
+        android:textColor="#ececec"
+        android:hint="@string/nip"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true" 
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/edit_text_holo_light"
+        />
+
+    
+
+</RelativeLayout>

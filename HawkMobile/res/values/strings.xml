@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HawkMobile</string>
+    <string name="action_settings">Settings</string>
+    <string name="not">NOTICIAS</string>
+    <string name="hor">HORARIO</string>
+    <string name="cal">CALIFICACIONES</string>
+    <string name="loca">LOCALIZA AULAS</string>
+    <string name="kar">KARDEX</string>
+    <string name="conta">CONTACTO</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_lasnoticias">Noticias</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_horario">Horario</string>
+    <string name="title_activity_calificaciones">Calificaciones</string>
+    <string name="title_activity_loca">Localizacion</string>
+    <string name="title_activity_kardex">Kardex</string>
+    <string name="aut">Autenticar</string>
+    <string name="nocontrol">Numero de Control</string>
+    <string name="nip">Nip</string>
+    <string name="olis">olis</string>
+
+    <color name="azul">#0099cc</color>
+    <color name="grisbajito">#e3e2e2</color>
+
+    <string name="title_activity_sem_buttons">SemButtons</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

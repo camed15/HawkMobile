@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".Home" >
+
+    <LinearLayout
+        android:id="@+id/barra"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#669900"
+        android:orientation="horizontal"
+        android:shadowColor="@android:color/darker_gray" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cierra"
+            android:shadowColor="@android:color/black"
+            android:src="@drawable/logoselect" />
+
+        <TextView
+            android:id="@+id/tituloH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="3dp"
+            android:text="HawkMobile"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/barra"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            
+            <TextView
+                android:id="@+id/noprueba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="15dp"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#555555"
+                android:typeface="monospace" />
+
+            <RelativeLayout
+                android:id="@+id/btnnoticias"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btnloca"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/nots"
+                android:onClick="abrenoticias"
+                android:text="Noticias" >
+                
+                
+                <TextView
+                    android:id="@+id/nottxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Noticias"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="27sp" />
+
+                <TextView
+                    android:id="@+id/nottxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Lo nuevo en el tec!"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="17sp" />
+                
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnKardex"
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btnnoticias"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blu"
+                android:onClick="abrekardex" >
+                
+                  <TextView
+                    android:id="@+id/kardextxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Kardex"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="27sp" />
+
+                <TextView
+                    android:id="@+id/kardextxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/kardextxt"
+                    android:layout_alignParentBottom="true"
+                    android:text="Consulta tu Kardex de calificaciones."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="17sp" />
+                
+			 </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/califbtn"
+                 android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:layout_alignLeft="@+id/btnKardex"
+                android:layout_below="@+id/btnKardex"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blu"
+                android:onClick="abrecalificaciones" >
+                
+                  <TextView
+                    android:id="@+id/califtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Calificaciones Parciales"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="27sp" />
+
+                <TextView
+                    android:id="@+id/califtxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Consulta las calificaciones de tus materias actuales."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="17sp" />
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnloca"
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:layout_alignLeft="@+id/btnnoticias"
+                android:layout_below="@+id/noprueba"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/nots"
+                android:gravity="top|left|center_horizontal"
+                android:onClick="abreloca" >
+
+                <TextView
+                    android:id="@+id/locatxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Localización"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="27dp" />
+
+                <TextView
+                    android:id="@+id/locatxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Muestra la ubicacion de las instalaciones y tu ubicacion dentro del instituto."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            
+            <RelativeLayout
+                android:id="@+id/horaMat"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:layout_alignBaseline="@+id/btnnoticias"
+                android:layout_alignBottom="@+id/btnnoticias"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/blu"
+                android:onClick="abrehorario" >
+                
+                <TextView
+                    android:id="@+id/horatxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Horario"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="27sp" />
+
+                <TextView
+                    android:id="@+id/horatxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Checa tu horario"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="17sp" />
+                
+                </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
