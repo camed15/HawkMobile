@@ -21,7 +21,7 @@ import android.widget.Toast;
 public class Conexion implements Runnable {
 	String respuesta;
 	private static String NAMESPACE = "http://pyramid.org";
-	private static String URL = "http://189.244.8.252:4400/LoginHwkM/services/Login?wsdl";
+	private static String URL = "http://SOCKET/LoginHwkM/services/Login?wsdl";
 	private static String SOAP_ACTION = "http://pyramid.org/authentication";
 	private static String METHOD_NAME = "authentication";
 	static String[] arre = new String[10];
@@ -86,7 +86,7 @@ public class Conexion implements Runnable {
 
 	public String[] semestres(String nocontrol) {
 
-		String URL = "http://189.244.8.252:4400/LoginHwkM/services/Semestres?wsdl";
+		String URL = "http://SOCKET/LoginHwkM/services/Semestres?wsdl";
 		String SOAP_ACTION = "http://pyramid.org/Kardex";
 		String METHOD_NAME = "Kardex";
 
@@ -148,7 +148,7 @@ public class Conexion implements Runnable {
 		String[] arreglo = new String[10];
 
 		String NAMESPACE = "http://pyramid.org";
-		String URL = "http://189.244.8.252:4400/LoginHwkM/services/SemestreInd?wsdl";
+		String URL = "http://SOCKET/LoginHwkM/services/SemestreInd?wsdl";
 		String SOAP_ACTION = "http://pyramid.org/Kardex";
 		String METHOD_NAME = "Kardex";
 
@@ -199,7 +199,7 @@ public class Conexion implements Runnable {
 	public String[] consultH(int posi, String no_control, String dia) {
 
 		String NAMESPACE = "http://pyramid.org";
-		String URL = "http://189.244.8.252:4400/LoginHwkM/services/Horario?wsdl";
+		String URL = "http://SOCKET/LoginHwkM/services/Horario?wsdl";
 		String SOAP_ACTION = "http://pyramid.org/horas";
 		String METHOD_NAME = "horas";
 
@@ -254,7 +254,7 @@ public class Conexion implements Runnable {
 		String[] arreglo = new String[10];
 
 		String NAMESPACE = "http://pyramid.org";
-		String URL = "http://189.244.8.252:4400/LoginHwkM/services/boleta?wsdl";
+		String URL = "http://SOCKET/LoginHwkM/services/boleta?wsdl";
 		String SOAP_ACTION = "http://pyramid.org/consulta";
 		String METHOD_NAME = "consulta";
 
